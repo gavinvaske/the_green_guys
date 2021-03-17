@@ -12,6 +12,10 @@ a:active {
   outline: none !important;
 }
 
+.card-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
 .splash-image {
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +23,11 @@ a:active {
     width: 100%;
     height: 100%;
     opacity: 1;
-    background-image: url('https://townhousemyhouse.com/img/banner/thmh_wdm_2016.jpg');
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+        url('../img/splash_image_1.jpg');
     visibility: inherit;
 }
 
