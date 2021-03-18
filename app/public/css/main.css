@@ -1,6 +1,8 @@
-body {
+body, html {
     background-color: #eee;
     font-family: 'Roboto', 'sans-serif';
+    margin: 0px 0px;
+    padding: 0px 0px;
 }
 
 a,
@@ -10,6 +12,48 @@ a:focus,
 a:active {
   text-decoration: none;
   outline: none !important;
+  color: inherit;
+}
+
+.dark-background {
+    background-color: #232328;
+}
+
+ul li {
+    color: red;
+}
+
+#navbarNav .navbar-nav .nav-item a {
+    color: #B2B2B4;
+}
+#navbarNav .navbar-nav .nav-item a:hover {
+    color: #fff;
+}
+
+#contact-info {
+    margin: 1rem;
+}
+
+#contact-form {
+    margin: 1rem;
+}
+
+#contact-section .container {
+    padding: 0px;
+    margin: 0px;
+}
+
+#services-section {
+    padding-bottom: 2rem;
+}
+
+#main-navbar {
+    padding: 0rem 1rem;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 99999;
 }
 
 .card-overlay {
