@@ -19,8 +19,10 @@ a:active {
     background-color: #232328;
 }
 
-ul li {
-    color: red;
+#gallery-section { 
+    width: 50%;
+    overflow: hidden;
+
 }
 
 #navbarNav .navbar-nav .nav-item a {
