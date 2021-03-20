@@ -15,12 +15,53 @@ a:active {
   color: inherit;
 }
 
+.employee-pictures {
+    width: 100%;
+}
+
+.section-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.section { 
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    min-width: 100%;
+}
+
+.carousel-gallery {
+    width: 50%;
+}
+
 .dark-background {
     background-color: #232328;
 }
 
-ul li {
-    color: red;
+.background-green {
+    background-color: #404D1A;
+}
+
+.background-orange {
+    background-color: #9E562C;
+}
+
+#splash-image-overlay {
+    color: white;
+}
+
+#gallery-section { 
+    width: 50%;
+    overflow: hidden;
+}
+
+.card-overlay .splash-details {
+    width: inherit;
+    height: inherit;
 }
 
 #navbarNav .navbar-nav .nav-item a {
@@ -57,7 +98,9 @@ ul li {
 }
 
 .card-overlay {
-    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    background: rgba(34, 34, 34, 0.20);
   }
 
 .splash-image {
