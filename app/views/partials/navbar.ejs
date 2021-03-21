@@ -22,11 +22,13 @@
       </ul>
     </div>
   </nav>
-  
-  <script>
-    $(document).ready(function(){
-        $('#navbarNav li a').on('click', function(){
-            $('.navbar-toggler').click()
-        });
-    });
-  </script>
+
+<script>
+  $(document).ready(function(){
+      $('#navbarNav li a').on('click', function(){
+        if($('.navbar-toggler').css('display') !='none'){
+          $('.navbar-toggler').click();
+      }
+      });
+  });
+</script>
