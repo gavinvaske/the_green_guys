@@ -88,6 +88,7 @@ a:active {
 }
 #navbarNav .navbar-nav .nav-item a:hover {
     color: #fff;
+    border-bottom:3px solid #9E562C;
 }
 
 #contact-form .row {
