@@ -1,78 +1,37 @@
 <div id="contact-section" class="section bg-white">
     <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="d-flex justify-content-center align-items-center flex-column">
-                <div class="p-2"><h1><strong>CONTACT US</strong></h1></div>
-                <div class="p-2"><h5>West Des Moines, Iowa</h5></div>
-                <div class="p-2"><h5>Centar@yahoo.com</h5></div>
-                <div class="p-2"><h5>(555) 978-6969</h5></div>
+        <div class="col-12 .col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div id="contact-info" class="d-flex justify-content-center align-items-center flex-column">
+                <div class="p-2"><h2 class="section-title">CONTACT US</h2></div>
+                <address class="p-2">West Des Moines, Iowa 50266, US</address>
+                <address class="p-2">Centar@yahoo.com</address>
+                <address class="p-2">(555) 978-6969</address>
             </div> 
         </div>
-        <div class="col-12 col-md-6">
-            <form>
-                <div class="form-group">
-                    <div class="form-group">
-                        <label for="formGroupExampleInput">Email:</label>
-                        <input type="text" class="form-control" id="user-email" placeholder="me@gmail.com">
+        <div class="col-12 .col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <form id="contact-form" class="d-flex flex-column">
+                <div class="row">
+                    <div class="col">
+                        <input name="username" id='contact-form-name' type="text" class="form-control" placeholder="Name">
                     </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput2">Phone Number:</label>
-                        <input type="text" class="form-control" id="user-phone" placeholder="Optional">
+                    <div class="col">
+                        <input name="userEmail" id='contact-form-email' type="text" class="form-control" placeholder="Email">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">What Can We Do For You:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div class="row">
+                    <div class="col">
+                        <input name="emailSubject" id='contact-form-subject' type="text" class="form-control" placeholder="Subject">
+                    </div>
                 </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline1">Contact By Phone</label>
+                <div class="row">
+                    <div class="col">
+                        <textarea name="emailMessage" id='contact-form-message' class="form-control" rows="3" placeholder="Message"></textarea>
+                    </div>
                 </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline2">Contact Me By Email</label>
+                <div class="row align-self-center">
+                    <button id="contact-form-button" type="submit" class="btn btn-primary">Send</button>
                 </div>
             </form>
         </div>
-      </div>
-
-    
-    <!-- <div class="container-fluid">
-        <div class="row" class="d-flex justify-content-center align-items-center flex-row">
-            <div class="col" id="contact-info">
-                <div class="d-flex justify-content-center align-items-center flex-column">
-                    <div class="p-2"><h1><strong>CONTACT US</strong></h1></div>
-                    <div class="p-2"><h5>West Des Moines, Iowa</h5></div>
-                    <div class="p-2"><h5>Centar@yahoo.com</h5></div>
-                    <div class="p-2"><h5>(555) 978-6969</h5></div>
-                </div> 
-            </div>
-            <div class="col" id="contact-form">
-                <form>
-                    <div class="form-group">
-                        <div class="form-group">
-                            <label for="formGroupExampleInput">Email:</label>
-                            <input type="text" class="form-control" id="user-email" placeholder="me@gmail.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="formGroupExampleInput2">Phone Number:</label>
-                            <input type="text" class="form-control" id="user-phone" placeholder="Optional">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">What Can We Do For You:</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline1">Contact By Phone</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadioInline2">Contact Me By Email</label>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div> -->
+    </div>
 </div>
