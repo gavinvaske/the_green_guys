@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const expressLayouts = require('express-ejs-layouts');
+require('dotenv').config();
 
 const app = express();
 const defaultPort = 3000;
