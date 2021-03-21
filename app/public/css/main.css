@@ -18,6 +18,10 @@ a:active {
   color: inherit;
 }
 
+.carousel-caption {
+    margin-bottom: -1.5rem;
+}
+
 #contact-info address {
     font-weight: 400;
     font-size: 13px;
@@ -164,6 +168,20 @@ a:active {
     align-items: center;
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+    .carousel-caption p {
+        font-size: .75rem;
+    }
+
+    .carousel-caption {
+        margin-bottom: -3rem;
+    }
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .nav-link {
@@ -175,5 +193,8 @@ a:active {
 @media (min-width: 576px) and (max-width: 767.98px) {
     .nav-link {
         font-size: 36px;
+    }
+    .carousel-caption h3 {
+        font-size: 1px;
     }
 }
