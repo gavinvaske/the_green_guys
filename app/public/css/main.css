@@ -7,6 +7,7 @@ body, html {
     padding: 0px 0px;
     font-weight: 400;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a,
@@ -19,11 +20,23 @@ a:active {
   color: inherit;
 }
 
+object{
+    pointer-events: none;
+}
+
 .navbar-light.navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(158, 86, 44, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   } 
 .custom-navbar-toggler.navbar-toggler {
     border-color: #9E562C;
+}
+
+#services-section .row .col .card-title {
+    color: #9E562C;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #contact-info address {
@@ -61,8 +74,17 @@ a:active {
     width: 50%;
 }
 
+
 .dark-background {
     background-color: #232328;
+}
+
+.dark-text-color {
+    color: #232328;
+}
+
+.light-background {
+    background-color: #EEEEEE;
 }
 
 .background-green {
@@ -88,10 +110,10 @@ a:active {
 }
 
 #navbarNav .navbar-nav .nav-item a {
-    color: #B2B2B4;
+    color: #232328;
 }
 #navbarNav .navbar-nav .nav-item a:hover {
-    color: #fff;
+    color: #404D1A;
     border-bottom:3px solid #9E562C;
 }
 
@@ -119,6 +141,7 @@ a:active {
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     z-index: 99999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-overlay {
