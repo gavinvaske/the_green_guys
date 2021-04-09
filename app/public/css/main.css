@@ -25,6 +25,14 @@ object{
     pointer-events: none;
 }
 
+#display-flex {
+    display: flex;
+}
+
+.light-text {
+    color: #757575;
+}
+
 .navbar-light.navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(158, 86, 44, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   } 
@@ -75,7 +83,6 @@ object{
 .carousel-gallery {
     width: 50%;
 }
-
 
 .dark-background {
     background-color: #232328;
@@ -203,6 +210,7 @@ object{
     .carousel-caption h3 {
         font-size: 1.5rem;
     }
+
     .carousel-caption p {
         font-size: .75rem;
     }
@@ -217,17 +225,11 @@ object{
     .nav-link {
         font-size: 36px;
     }
-    h3 {
-        font-size: 1rem;
-    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     .nav-link {
         font-size: 36px;
-    }
-    .carousel-caption h3 {
-        font-size: 1px;
     }
 }
