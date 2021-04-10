@@ -1,14 +1,17 @@
 const nodemailer = require('nodemailer');
 
-function sendEmail(emailInformation) {
-    var transport = nodemailer.createTransport({
-        host: process.env.SMTP_HOST,
-        port: 2525,
+function getEmailTransporter() {
+    return nodemailer.createTransport({
+        service: 'gmail',
         auth: {
-            user: process.env.SMTP_USERNAME,
-            pass: process.env.SMTP_PASSWORD
+            user: process.env.COMPANY_EMAIL,
+            pass: process.env.EMAIL_PASSWORD
         }
     });
+}
+
+function sendEmail(emailInformation) {
+    var transport = getEmailTransporter();
     
     const message = {
         from: emailInformation.userEmail,
