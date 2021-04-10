@@ -20,14 +20,10 @@ function sendEmail(emailInformation) {
         text: emailInformation.emailBody
     };
 
-    console.log(`companyEmail: ${process.env.COMPANY_EMAIL}`);
-    console.log(`companyEmailPswd: ${process.env.EMAIL_PASSWORD}`);
-
     transport.sendMail(message, function(error) {
         if (error) {
             console.log(`Error while sending email: ${error}`);
         }
-        console.log(`sendMail message: ${message}`);
     });
 }
 

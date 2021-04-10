@@ -36,9 +36,30 @@
     </div>
 </div>
 
-<script>    
+<script>
     $(document).ready(function(){
-        $("#contact-form").submit(function(e) {
+        function resetForm() {
+            const inputs = $('#contact-form input');
+
+            for (let i = 0; i < inputs.length; i++) {
+                switch (inputs[i].type) {
+                    case 'text':
+                        inputs[i].value = '';
+                        break;
+                    case 'radio':
+                    case 'checkbox':
+                        inputs[i].checked = false;   
+                }
+            }
+
+            const textAreas = $('#contact-form textarea');
+
+            for (let i = 0; i < textAreas.length; i++) {
+                textAreas[i].value = '';
+            }
+        }
+
+    $("#contact-form").submit(function(e) {
         e.preventDefault();
         var form = $(this);
 
@@ -47,7 +68,8 @@
             url: '/email-contact-form',
             data: form.serialize(),
             success: function(data){
-                alert('Form submitted successfully');
+                resetForm();
+                alert('Message sent successfully');
             },
             error: function(error) {
                 alert('An error prevented the form from being submitted.')
