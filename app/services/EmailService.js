@@ -17,12 +17,14 @@ function sendEmail(emailInformation) {
         from: emailInformation.userEmail,
         to: process.env.COMPANY_EMAIL,
         subject: emailInformation.emailSubject,
-        text: emailInformation.emailBody
+        text: JSON.stringify(emailInformation)
     };
 
     transport.sendMail(message, function(error) {
         if (error) {
             console.log(`Error while sending email: ${error}`);
+        } else {
+            console.log('Email sent: ' + info.response);
         }
     });
 }
